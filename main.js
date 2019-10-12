@@ -69,7 +69,9 @@ function createUtm() {
 }
 
 function copy() {
-  var utmValue = document.getElementById('utm');
+  var utmValue = document.getElementById('utm'),
+      copyButtonValue = document.getElementById('copy');
   utmValue.select();
   document.execCommand('copy');
+  copyButtonValue.innerHTML = "UTM copiato";
 }
